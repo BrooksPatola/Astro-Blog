@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+const BlogTitle = "My Astro Learning Blog";
 ---
 
-<Layout title="Astro Blog.">
+<Layout title={BlogTitle}>
 	<main>
 		<svg
 			class="astro-a"
@@ -36,9 +37,14 @@ import Layout from '../layouts/Layout.astro';
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
-		<h1><span class="text-gradient">My Astro Learning Blog</span> </h1>
+		<h1><span class="text-gradient">{BlogTitle}</span> </h1>
 
         <p class="instructions">This is where I will post about my journey learning Astro.</p>
+		<ul>
+			<li><a href="/posts/post-1/">Post 1</a></li>
+			<li><a href="/posts/post-2/">Post 2</a></li>
+			<li><a href="/posts/post-3/">Post 3</a></li>
+		</ul>
 
 	</main>
 </Layout>
