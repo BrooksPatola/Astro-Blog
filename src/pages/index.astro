@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
 import '../styles/global.css';
 
-const pageTitle = "Home"
+const pageTitle = "Astro"
 ---
 
 <Layout title="Welcome to Astro.">
@@ -36,10 +39,8 @@ const pageTitle = "Home"
 				</linearGradient>
 			</defs>
 		</svg>
-		<a href="/">{pageTitle}</a>
-        <a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
-		<h1>My <span class="text-gradient">Astro</span> Site</h1>
+		<Navigation />
+		<h1>My <span class="text-gradient">{pageTitle}</span> Site</h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -66,6 +67,8 @@ const pageTitle = "Home"
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+
+		<Footer />
 	</main>
 </Layout>
 
