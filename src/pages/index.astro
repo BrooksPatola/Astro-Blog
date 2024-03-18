@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 import '../styles/global.css';
@@ -39,7 +39,7 @@ const pageTitle = "Astro"
 				</linearGradient>
 			</defs>
 		</svg>
-		<Navigation />
+		<Header />
 		<h1>My <span class="text-gradient">{pageTitle}</span> Site</h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
@@ -69,6 +69,9 @@ const pageTitle = "Astro"
 		</ul>
 
 		<Footer />
+		<script>
+		import "../scripts/menu.js";
+		  </script>
 	</main>
 </Layout>
 

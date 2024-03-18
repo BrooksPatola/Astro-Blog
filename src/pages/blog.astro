@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const BlogTitle = "My Astro Learning Blog";
@@ -37,7 +37,7 @@ const BlogTitle = "My Astro Learning Blog";
 				</linearGradient>
 			</defs>
 		</svg>
-		<Navigation />
+		<Header />
 		<h1><span class="text-gradient">{BlogTitle}</span> </h1>
 
         <p class="instructions">This is where I will post about my journey learning Astro.</p>
@@ -47,6 +47,9 @@ const BlogTitle = "My Astro Learning Blog";
 			<li><a href="/posts/post-3/">Post 3</a></li>
 		</ul>
 		<Footer />
+		<script>
+			import "../scripts/menu.js";
+		 </script>
 	</main>
 </Layout>
 
