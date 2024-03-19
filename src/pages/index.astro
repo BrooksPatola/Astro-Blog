@@ -6,10 +6,11 @@ import Footer from '../components/Footer.astro';
 
 import '../styles/global.css';
 
-const pageTitle = "Astro"
+const AstroTitle = "Astro";
+
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Homepage">
 	<main>
 		<svg
 			class="astro-a"
@@ -40,7 +41,7 @@ const pageTitle = "Astro"
 			</defs>
 		</svg>
 		<Header />
-		<h1>My <span class="text-gradient">{pageTitle}</span> Site</h1>
+		<h1>My <span class="text-gradient">{AstroTitle}</span> Site</h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
