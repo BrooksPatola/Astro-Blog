@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-
+import Greeting from '../components/Greeting';
 import '../styles/global.css';
 
 const AstroTitle = "Astro";
@@ -43,9 +43,12 @@ const AstroTitle = "Astro";
 		<Header />
 		<h1>My <span class="text-gradient">{AstroTitle}</span> Site</h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			My Amazing Astro Blog!
 		</p>
+
+	
+		<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
