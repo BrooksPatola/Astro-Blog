@@ -29,6 +29,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     background-size: 400%;
     background-position: 0%;
+    background-clip: text;
 }
 .instructions {
     margin-bottom: 2rem;
@@ -97,6 +98,17 @@ h1 {
     display: unset;
   }
   
+
+  html.dark {
+    background-color: #0d0950;
+    color: #fff;
+  }
+  
+  .dark .nav-links a {
+    color: #fff;
+  }
+
+
   @media screen and (min-width: 636px) {
     .nav-links {
       margin-left: 5em;
